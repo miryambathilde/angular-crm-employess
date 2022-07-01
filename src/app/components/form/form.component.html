@@ -1,0 +1,82 @@
+<div class="container mt-5">
+  <h2 class="my-3">Formulario Empleados</h2>
+  <form
+    action=""
+    #formEmpleados="ngForm"
+    (ngSubmit)="getDataForm(formEmpleados)"
+  >
+    <div class="mb-3 form-group">
+      <label for="nombre">Nombre</label>
+      <input
+        class="form-control"
+        type="text"
+        name="name"
+        id="name"
+        ngModel
+        name="name"
+      />
+    </div>
+
+    <div class="mb-3 form-group">
+      <label for="apellidos">Apellidos</label>
+      <input
+        class="form-control"
+        type="text"
+        name="surname"
+        id="surname"
+        ngModel
+        name="surname"
+      />
+    </div>
+
+    <div class="mb-3 form-group">
+      <label for="dni">DNI</label>
+      <input
+        class="form-control"
+        type="text"
+        name="dni"
+        id="dni"
+        placeholder="DNI"
+        ngModel
+        name="dni"
+      />
+    </div>
+
+    <div class="mb-3 form-group">
+      <label for="dni">Email</label>
+      <input
+        class="form-control"
+        type="text"
+        name="email"
+        id="email"
+        ngModel
+        name="email"
+      />
+    </div>
+
+    <div class="mb-3 form-group">
+      <label for="photo">Foto</label>
+      <input
+        class="form-control"
+        type="text"
+        name="photo"
+        id="photo"
+        placeholder="http://www.example.photo.jpg"
+        ngModel
+        name="photo"
+      />
+    </div>
+
+    <div class="mb-3 form-group">
+      <label for="department">Departamento</label>
+      <select id="department" class="form-control" ngModel name="department">
+        <option selected>Selecciona un departamento</option>
+        <option value="contabilidad">Contabilidad</option>
+        <option value="marketing">Marketing</option>
+        <option value="direccion">Dirección</option>
+        <option value="desarrollo">Desarrollo</option>
+      </select>
+    </div>
+    <input type="submit" class="btn btn-info mt-2" value="Guardar" />
+  </form>
+</div>
